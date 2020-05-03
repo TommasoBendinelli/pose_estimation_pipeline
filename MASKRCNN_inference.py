@@ -43,11 +43,11 @@ import torchvision.transforms as transforms
 import torchvision.utils as vutils
 from torch.autograd import Variable
 # from datasets.linemod.dataset import PoseDataset as PoseDataset_linemod
-from lib.network import PoseNet, PoseRefineNet
-from lib.loss import Loss
-from lib.loss_refiner import Loss_refine
-from lib.transformations import euler_matrix, quaternion_matrix, quaternion_from_matrix
-from lib.knn.__init__ import KNearestNeighbor
+from DENSEFUSION_lib.network import PoseNet, PoseRefineNet
+from DENSEFUSION_lib.loss import Loss
+from DENSEFUSION_lib.loss_refiner import Loss_refine
+from DENSEFUSION_lib.transformations import euler_matrix, quaternion_matrix, quaternion_from_matrix
+from DENSEFUSION_lib.knn.__init__ import KNearestNeighbor
 import torchvision.transforms as transforms
 import pyrealsense2 as rs
 import glob

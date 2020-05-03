@@ -11,15 +11,26 @@
             "program": "create_mask.py",
             "console": "integratedTerminal",
             "env": {
-                "PYTHONPATH": "${workspaceRoot}/research:${workspaceRoot}/research/slim",
+                "PYTHONPATH": "${workspaceRoot}/MASK_RCNN_research:${workspaceRoot}/research/slim",
                 "TF_FORCE_GPU_ALLOW_GROWTH": "true"
             },
         },
         {
-            "name": "Real time inference",
+            "name": "MASK-RCNN inference",
             "type": "python",
             "request": "launch",
-            "program": "real_time_inference.py",
+            "program": "MASKRCNN_inference.py",
+            "console": "integratedTerminal",
+            "env": {
+                "PYTHONPATH": "${workspaceRoot}/MASK_RCNN_research:${workspaceRoot}/research/slim",
+                "TF_FORCE_GPU_ALLOW_GROWTH": "true"
+            },
+        },
+        {
+            "name": "YOLACT inference",
+            "type": "python",
+            "request": "launch",
+            "program": "YOLACT_inference.py",
             "console": "integratedTerminal",
             "env": {
                 "PYTHONPATH": "${workspaceRoot}/research:${workspaceRoot}/research/slim",
@@ -27,7 +38,7 @@
             },
         },
         {
-            "name": "Inference",
+            "name": "Old Inference",
             "type": "python",
             "request": "launch",
             "program": "inference.py",

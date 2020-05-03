@@ -3,3 +3,6 @@ models/
 lib/
 datasets/
 research/
+MASK_RCNN_research/
+DENSEFUSION_lib/
+YOLACT/
