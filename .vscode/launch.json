@@ -33,9 +33,16 @@
             "program": "YOLACT_inference.py",
             "console": "integratedTerminal",
             "env": {
-                "PYTHONPATH": "${workspaceRoot}/research:${workspaceRoot}/research/slim",
-                "TF_FORCE_GPU_ALLOW_GROWTH": "true"
+                "PYTHONPATH": "${workspaceRoot}/YOLACT",
+                "TF_FORCE_GPU_ALLOW_GROWTH": "true",
             },
+            "args": [
+                "--trained_model=./models/yolact/yolact_plus_resnet50_cig_butts_30_30000.pth",
+                "--config=yolact_resnet50_workpieces_config_plus",
+                "--score_threshold=0.7",
+                "--top_k=15",
+                "--video=0"
+            ],
         },
         {
             "name": "Old Inference",
